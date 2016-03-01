@@ -1,5 +1,18 @@
 {
   'variables': {
+    # Embedded build
+    'embedded': 1,
+    # Use OZONE
+    'use_ozone': 1,
+    'ozone_platform_egl': 1,
+    'ozone_platform_headless': 1,
+    'ozone_platform_gbm': 0,
+    # Fast build, no debug symbols
+    'fastbuild': 1,
+    # Disable x11
+    'use_x11': 0,
+    'use_libpci': 0,
+    'enable_extensions': 0,
     # Don't use nacl.
     'disable_nacl': 1,
     # Enalbe using proprietary codecs.
@@ -31,7 +44,7 @@
         'use_dbus': 1,
         # Make Linux build contain debug symbols, this flag will add '-g' to
         # cflags.
-        'linux_dump_symbols': 1,
+        'linux_dump_symbols': 0,
         # The Linux build of libchromiumcontent.so depends on, but doesn't
         # provide, tcmalloc by default.  Disabling tcmalloc here also prevents
         # any conflicts when linking to binaries or libraries that don't use

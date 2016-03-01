@@ -44,7 +44,7 @@ STATIC_LIBRARY_SUFFIX = {
   'win32': 'lib',
 }[TARGET_PLATFORM]
 
-COMPONENTS = ['static_library', 'shared_library']
+COMPONENTS = ['static_library'] #, 'shared_library']
 BINARIES = {
   'all': [
     'content_shell.pak',
@@ -74,7 +74,7 @@ BINARIES = {
     'chromedriver',
     'mksnapshot',
     'libosmesa.so',
-    'libgtk2ui.a',
+    #'libgtk2ui.a',
     'libdevtools_discovery.a',
     'libdevtools_http_handler.a',
     'libhttp_server.a',
@@ -158,7 +158,7 @@ INCLUDE_DIRS = [
   'base',
   'build',
   'cc',
-  'chrome/browser/ui/libgtk2ui',
+  #'chrome/browser/ui/libgtk2ui',
   'components/cdm',
   'components/devtools_discovery',
   'components/devtools_http_handler',

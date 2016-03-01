@@ -73,7 +73,7 @@
           'conditions': [
             ['OS=="linux"', {
               'dependencies': [
-                '<(DEPTH)/chrome/browser/ui/libgtk2ui/libgtk2ui.gyp:gtk2ui',
+                #'<(DEPTH)/chrome/browser/ui/libgtk2ui/libgtk2ui.gyp:gtk2ui',
               ],
             }],  # OS=="linux"
           ],
